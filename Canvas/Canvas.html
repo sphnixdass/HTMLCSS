@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+
+    <title></title>
+  </head>
+  <body>
+    <canvas id="e" width="177" height="113"></canvas>
+
+ <script>
+// This originally sets the canvas up with image.jpg
+  var canvas = $("#e")[0]; // only get first one
+  var context = canvas.getContext("2d");
+  var img = new Image();
+  img.src = "image.jpg";
+  img.onload = function() {
+  context.drawImage(img, 0, 0);
+  };
+  </script>
+  <a id="a">click</a>
+
+   <script>
+   $('#a').click(function(){
+     var i;
+     for (var i = 0; i < array.length; i++) {
+       array[i]
+     }
+   var canvas = $('#e')[0];
+   canvas.width = canvas.width;//blanks the canvas
+   var c = canvas.getContext("2d");
+    var img = new Image();
+    img.src = '1.jpg';
+   img.onload = function(){
+    c.drawImage(img, 0, 0);
+   }
+   return false;
+  });
+  </script>
+
+    <canvas id="canvas" width="300" height="300" style="border:2px solid"></canvas>
+    <script type="text/javascript">
+      var c = document.getElementById("canvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0,0);
+      ctx.lineTo(200,100);
+      ctx.stroke();
+    </script>
+
+
+  </body>
+</html>
